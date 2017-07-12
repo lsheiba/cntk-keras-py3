@@ -1,14 +1,15 @@
-Description: kl application template python2
+Description: cntk-keras-python3 chart
 Engine: gotpl
 Home: http://kuberlab.com
 Icon: https://storage.googleapis.com/kuberlab/static/favicon.ico
 Keywords:
 - kubernets
-- tensorflow
-- python2
+- cntk
+- keras
+- python3
 Maintainers:
 - Email: lsheiba@kuberlab.com
   Name: Leonard Sheiba
-Name: klchart_p2
+Name: cntk-keras-py3
 Version: 1.0.0
 Type: mlapp
