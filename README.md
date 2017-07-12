@@ -1,1 +1,1 @@
-# klchart_p2 - python 2
+# cntk-keras-py3
