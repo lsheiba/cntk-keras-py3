@@ -1,14 +1,14 @@
 Args: --data_dir=/workspace/data --log_dir=$RUNDIR --training_iteration=1000
 Cmd: main.py
 EnvVars: []
-ExecutionDir: /src/klchart_p2
+ExecutionDir: /src/cntk-keras-py3
 Images:
-  BaseImage: tensorflow/tensorflow:latest
-  GpuImage: tensorflow/tensorflow:latest-gpu
-  PSImage: tensorflow/tensorflow:latest
+  BaseImage: lsheiba/keras-cntk-cpu:latest
+  GpuImage: lsheiba/keras-cntk-gpu:latest
+  PSImage: lsheiba/keras-cntk-cpu:latest
 Jupyter:
   UseGPU: true
-  Image: lsheiba/tensorflow:latest-gpu
+  Image: lsheiba/keras-cntk-gpu:latest
 MonitoringNamespace: kuberlab
 Requests:
   CPU: 100m
@@ -26,7 +26,7 @@ Volumes:
   clusterStorage: {{ .storage }}
   subPath: training
 - gitRepo:
-    repository: https://github.com/lsheiba/klchart_p3
+    repository: https://github.com/lsheiba/cntk-keras-py3
   isLibDir: false
   isTrainLogDir: false
   mountPath: /src
